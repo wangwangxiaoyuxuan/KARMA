@@ -4,11 +4,11 @@ Author: James Wang
 Date: 13th of December, 2018
 
 In this README there is:
-Overview and Introduction
-Why Focus on Consequences
-System Architecture
-Computational Creativity Evaluation
-KARMA’s Effect on Me
+1. Overview and Introduction
+2. Why Focus on Consequences
+3. System Architecture
+4. Computational Creativity Evaluation
+5. KARMA’s Effect on Me
 
 ## Overview and Introduction
 The KARMA project, standing for Karmic Aspect Revolving Media Arranger, is a system that in which I attempt to generate narratives where actions have causes and consequences. In the impressive existing works on computational narrative generation, there are already systems that seem to keep track of its own story’s events and show their continuing effect. Two of the best examples I found are from Botnik Studios and Pablo Gervás. Botnik’s *Harry Potter and the Portrait of what Looked Like a Large Pile of Ash* demonstrates a system that can narratively follow the effects of one action for a couple of lines via text predictions. The PropperWryter system modified from Gervás used for *Beyond the Fence* generates coherent plots with existing story schemas and a selection of actions available to the characters. While the depth and polish of both Botnik and PropperWryter and their products are much beyond the current KARMA system, from what I know of those systems and what I plan for mine, KARMA explores a method of narrative generation that should more clearly and intentionally model character interactions’ causes and effects.
