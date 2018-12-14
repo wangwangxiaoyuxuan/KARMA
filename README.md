@@ -24,10 +24,7 @@ Besides having consequences, actions must also have reasons. This I gather from 
 Anyways, I am not alone in thinking that an engaging story’s characters act from an understandable cause to an understandable effect. For being such an important part of writing, it is unfair that consequential storytelling is underdeveloped in the computational creativity research world. The ideological purpose behind consequence-focused systems like KARMA is to consider actions’ causes and effects more closely to generate better stories.
 
 ## System Architecture
-![fig1](https://user-images.githubusercontent.com/42848927/50008657-e48bd200-ff82-11e8-8782-89f77bbf7d34.png)
-![figure 1 ideal consequence-focused literature generator](https://user-images.githubusercontent.com/42848927/50008658-e48bd200-ff82-11e8-93d6-ff39bac9d3e5.jpeg)
-
-
+![figure 1 ideal consequence-focused literature generator](https://user-images.githubusercontent.com/42848927/50008916-8dd2c800-ff83-11e8-800d-617f27a0f0ed.jpeg)
 
 ### Ideal System Architecture for KARMA
 In this section, I will describe the system architecture for the current ideal version of KARMA through its several processes: History generation, History to Script translation, Script evaluation, and the Improvement Engine.
@@ -44,7 +41,8 @@ Now comes the time to evaluate the Script. For this, KARMA consults a database o
 #### Improvement Engine
 As the Script enters the outside world and receives evaluations from human eyes, KARMA arranges the Script and its critical and public reception into a database similar to the previous section’s database for literature and their appraisals. The content of this database provides the resources to KARMA’s Improvement Engine. Its first function is to annotate KARMA’s previously generated pieces with areas of change and sends it back through the narrative generation system to make edits. Secondly, the Improvement Engine also adjusts each of the three previous processes to learn. This circles KARMA together as a learning and knowledgeable consequence-focused narrative generation system.
 
-![alt text](https://github.com/wangwangxiaoyuxuan/KARMA/blob/master/Figure%202.%20Detailed%20System%20Architecture%20of%20History%20Generator.jpeg “Figure 2. Detailed System Architecture of the History Generator”)
+![figure 2 detailed system architecture of history generator](https://user-images.githubusercontent.com/42848927/50008917-8dd2c800-ff83-11e8-859d-c2bd0e4a9b22.jpeg)
+
 
 ### Detailed System Architecture for the History Generator
 In this section, I will describe the central aspect of this project, the History Generator, starting with its inspiration, then gradually moving through its system architecture, and at last mentioning two criticisms.
@@ -54,7 +52,7 @@ To George R. R. Martin I owe gratitude for the design of the History Generator p
 
 #### System Architecture –– Qualities, Characters, and Actions
 KARMA’s History Generator takes the same approach. After the Cause and Effect Interpreter completes its study of its database, it compiles the massive and detailed Qualities Set and Actions Set. The Qualities Set contains Quality objects that are keywords which describe a single aspect of a character. A Quality may happen to be unique to a specific character, but each Quality is representative of a state, whether it is personality, relationship, mood, or physical or ideological condition, which could apply to any character. Building on Qualities, the Actions Set contains Action objects, keywords which represent a single action with a table associated Qualities. Also build from Qualities is the Character object, which is fairly straightforward with a name, a list of Qualities, and a end condition such as death. A rudimentary example of an Action (Murder) and its associated Qualities follows:
-![alt text](https://github.com/wangwangxiaoyuxuan/KARMA/blob/master/Figure%203.%20Action%20and%20Quality%20Table%20for%20Murder.jpeg “Figure 3. Action and Quality Table for Murder”)
+![figure 3 action and quality table for murder](https://user-images.githubusercontent.com/42848927/50008918-8dd2c800-ff83-11e8-9719-d395147cb2be.jpeg)
 To read the table: each cell of the pink row contains the Doer Character’s Qualities Set, each cell of the blue column contains the Recipient Character’s Qualities Set, and each orange cell contains the resultant effects on both Characters. (Note: the blank cells are only indicators for the purposes of this demonstration, as a data structure, only the colored cells exist.) At the moment, this table is incapable of producing a Murder Action with complex and relatable causes and effects. This is partially because each Character’s Qualities Set is too small, so an increase in available Qualities that would have made this table unsuitable for illustration will add complexity and nuance to the motivation. The lack of relatability, I think, is because this table does not expound on why the Characters have their current Qualities. More History is the solution since those Histories are the Actions and the backstory that created these Qualities in the first place.
 
 #### System Architecture –– History Writing and Picking the Action
