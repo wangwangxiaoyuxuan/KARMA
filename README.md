@@ -24,7 +24,10 @@ Besides having consequences, actions must also have reasons. This I gather from 
 Anyways, I am not alone in thinking that an engaging story’s characters act from an understandable cause to an understandable effect. For being such an important part of writing, it is unfair that consequential storytelling is underdeveloped in the computational creativity research world. The ideological purpose behind consequence-focused systems like KARMA is to consider actions’ causes and effects more closely to generate better stories.
 
 ## System Architecture
-![alt text](Figure 1. Ideal Consequence-Focused Literature Generator.jpeg)
+![fig1](https://user-images.githubusercontent.com/42848927/50008657-e48bd200-ff82-11e8-8782-89f77bbf7d34.png)
+![figure 1 ideal consequence-focused literature generator](https://user-images.githubusercontent.com/42848927/50008658-e48bd200-ff82-11e8-93d6-ff39bac9d3e5.jpeg)
+
+
 
 ### Ideal System Architecture for KARMA
 In this section, I will describe the system architecture for the current ideal version of KARMA through its several processes: History generation, History to Script translation, Script evaluation, and the Improvement Engine.
